@@ -52,7 +52,7 @@
         <script src="{{ asset('js/core/jquery.countTo.min.js') }}"></script>
         <script src="{{ asset('js/core/js.cookie.min.js') }}"></script>
         <script src="{{ asset('js/codebase.js') }}"></script>
-
+        <script src="{{ asset('js/plugins/bootstrap-notify/bootstrap-notify.min.js') }}"></script>
         <!-- Page JS Plugins -->
         <script src="{{ asset('js/plugins/jquery-validation/jquery.validate.min.js') }}"></script>
 
@@ -60,22 +60,18 @@
         <script src="{{ asset('js/pages/op_auth_signin.js') }}"></script>
 
         <script >
+    
         
         
-        @error('email')
-         jQuery.notify({
-             message : { text : {{ $message }}}
-         }).show();   
+       @error('email')
+       $.notify({message :"{{$message }}",type:'danger'});
         @enderror
 
 
         
         @error('password')
-        jQuery.notify({
-             message : { text : {{ $message }}}
-         }).show();                
+        $.notify({message :"{{$message }}",type:'danger'});             
          @enderror
-        
         
         </script>
 </body>

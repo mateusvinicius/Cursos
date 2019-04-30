@@ -37,11 +37,13 @@
                                 <!-- For more examples you can check out https://github.com/jzaefferer/jquery-validation -->
                                
                                  <form class="js-validation-signin px-30"  method="POST" action="{{ route('login') }}">
-                                    <div class="form-group row">
+                                    @csrf
+
+                                    <div class="form-group row @error('email')  is-invalid @enderror">
                                         <div class="col-12">
                                             <div class="form-material floating">
-                                                <input type="text" class="form-control" id="login-username" name="login-username">
-                                                <label for="login-username">Username</label>
+                                                <input type="email" class="form-control" id="login-username" name="email">
+                                                <label for="login-username">Email</label>
                                             </div>
                                         </div>
                                     </div>
