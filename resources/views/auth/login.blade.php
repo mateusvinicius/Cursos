@@ -11,11 +11,9 @@
                     <div class="row mx-0 bg-black-op">
                         <div class="hero-static col-md-6 col-xl-8 d-none d-md-flex align-items-md-end">
                             <div class="p-30 invisible" data-toggle="appear">
-                                <p class="font-size-h3 font-w600 text-white">
-                                    Get Inspired and Create.
-                                </p>
+                                <p class="font-size-h3 font-w600 text-white">Inspire-se e crie.</p>
                                 <p class="font-italic text-white-op">
-                                    Copyright &copy; <span class="js-year-copy">2017</span>
+                                    Copyright &copy; <span class="js-year-copy">2019</span>
                                 </p>
                             </div>
                         </div>
@@ -27,7 +25,7 @@
                                         <i class="si si-fire"></i>
                                         <span class="font-size-xl text-primary-dark">{{ config('app.name', 'laravel') }}</span>
                                     </a>
-                                    <h1 class="h3 font-w700 mt-30 mb-10">Welcome to Your Dashboard</h1>
+                                    <h1 class="h3 font-w700 mt-30 mb-10">Bem-vindo ao seu Portal</h1>
                                     <h2 class="h5 font-w400 text-muted mb-0">Please sign in</h2>
                                 </div>
                                 <!-- END Header -->
@@ -69,9 +67,7 @@
                                             <i class="si si-login mr-10"></i> Sign In
                                         </button>
                                         <div class="mt-30">
-                                            <a class="link-effect text-muted mr-10 mb-5 d-inline-block" href="op_auth_signup2.html">
-                                                <i class="fa fa-plus mr-5"></i> Create Account
-                                            </a>
+                                        
                                             <a class="link-effect text-muted mr-10 mb-5 d-inline-block" href="op_auth_reminder2.html">
                                                 <i class="fa fa-warning mr-5"></i> Forgot Password
                                             </a>
