@@ -17,4 +17,13 @@ Route::get('/', function () {
 
 Auth::routes();
 
+
+
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['prefix' => 'dashboard','middleware' => 'auth'],function(){
+
+    Route::get('/','DashBoard\DashBoardController@index')->name('index_dashboard');
+    Route::get('logout', 'DashBoard\DashBoardController@logout')->name('logout_dashboard');
+    
+});
