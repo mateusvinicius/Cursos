@@ -1,3 +1,17 @@
-<h1>OK OK</h1>
+@extends('dashboard.layouts.app')
 
-<a href="{{ route('logout_dashboard')}}">Sair</a>
+
+
+@section('content')
+@auth
+<div id="page-container" class="sidebar-o sidebar-inverse side-scroll page-header-fixed main-content-narrow">
+    @include('dashboard.includes.sidebar')
+    @include('dashboard.includes.header')
+    
+    @include('dashboard.includes.footer')
+</div>
+
+
+
+@endauth
+@endsection

@@ -20,10 +20,18 @@ Auth::routes();
 
 
 Route::get('/home', 'HomeController@index')->name('home');
-
-Route::group(['prefix' => 'dashboard','middleware' => 'auth'],function(){
+Route::get('logout', 'DashBoard\DashBoardController@logout')->name('logout_dashboard');
+Route::group(['prefix' => 'dashboard','middleware' => ['auth','admin']],function(){
 
     Route::get('/','DashBoard\DashBoardController@index')->name('index_dashboard');
-    Route::get('logout', 'DashBoard\DashBoardController@logout')->name('logout_dashboard');
+   
     
 });
+
+Route::group(['prefix' => 'aluno','middleware' => ['auth','aluno']],function(){
+
+    Route::get('/','DashBoard\Aluno\DashBoardController@index')->name('aluno_dashboard');
+   
+    
+});
+
