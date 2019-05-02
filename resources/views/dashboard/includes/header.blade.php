@@ -121,7 +121,7 @@
                                     <!-- END Side Overlay -->
     
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="{{ route('logout_dashboard')}}">
+                                    <a class="dropdown-item" href="{{ route('logout')}}">
                                         <i class="si si-logout mr-5"></i> Sign Out
                                     </a>
                                 </div>

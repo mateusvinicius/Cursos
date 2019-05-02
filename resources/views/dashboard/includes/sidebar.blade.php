@@ -73,7 +73,7 @@
                                             </a>
                                         </li>
                                         <li class="list-inline-item">
-                                            <a class="link-effect text-dual-primary-dark" href="{{ route('logout_dashboard')}}">
+                                            <a class="link-effect text-dual-primary-dark" href="{{ route('logout')}}">
                                                 <i class="si si-logout"></i>
                                             </a>
                                         </li>
@@ -87,19 +87,16 @@
                             <div class="content-side content-side-full">
                                 <ul class="nav-main">
                                     <li class="open">
-                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-cup"></i><span class="sidebar-mini-hide">Dashboards</span></a>
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-cup"></i><span class="sidebar-mini-hide">Users</span></a>
                                         <ul>
                                             <li>
-                                                <a href="be_pages_dashboard.html">Dashboard 1</a>
+                                            <a href="{{route('users.index')}}">All users</a>
                                             </li>
                                             <li>
-                                                <a class="active" href="be_pages_dashboard2.html">Dashboard 2</a>
+                                                <a class="active" href="be_pages_dashboard2.html">New user</a>
                                             </li>
                                             <li>
-                                                <a href="be_pages_dashboard3.html">Dashboard 3</a>
-                                            </li>
-                                            <li>
-                                                <a href="be_pages_dashboard4.html">Dashboard 4</a>
+                                                <a href="be_pages_dashboard3.html">You Profile</a>
                                             </li>
                                         </ul>
                                     </li>

@@ -8,10 +8,29 @@
     @include('dashboard.includes.sidebar')
     @include('dashboard.includes.header')
     
+    <main id="main-container">
+            <!-- Page Content -->
+            <div class="content">
+            
+            @yield('main')
+
+            </div>
+            <!-- END Page Content -->
+        </main>
+    
     @include('dashboard.includes.footer')
 </div>
 
 
-
+@yield('scrip')
 @endauth
+
+
+
+
+
+
 @endsection
+
+
+

@@ -58,11 +58,9 @@
 
         <!-- Page JS Code -->
         <script src="{{ asset('js/pages/op_auth_signin.js') }}"></script>
-
+      
+        @yield('scripts')
         <script >
-    
-        
-        
        @error('email')
        $.notify({message :"{{$message }}",type:'danger'});
         @enderror
@@ -72,7 +70,8 @@
         @error('password')
         $.notify({message :"{{$message }}",type:'danger'});             
          @enderror
-        
         </script>
+
+
 </body>
 </html>

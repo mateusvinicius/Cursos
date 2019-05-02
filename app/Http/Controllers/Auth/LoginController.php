@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Auth;
-
+use Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
@@ -49,6 +49,12 @@ class LoginController extends Controller
         }else if($this->guard()->user()->nivel == 2){
             return redirect('aluno');
         }
+
+    }
+
+    public function logout(){
+        Auth::logout();
+        return redirect('/login');
 
     }
 }
