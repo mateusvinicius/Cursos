@@ -1,5 +1,10 @@
 @extends('dashboard.layouts.app')
 
+@section('css-app')
+
+@yield('css-home')
+    
+@endsection
 
 
 @section('content')
@@ -22,13 +27,13 @@
 </div>
 
 
-@yield('scrip')
+
 @endauth
+@endsection
 
+@section('scripts')
 
-
-
-
+@yield('sc')
 
 @endsection
 

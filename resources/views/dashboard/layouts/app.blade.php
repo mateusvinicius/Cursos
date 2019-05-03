@@ -31,6 +31,7 @@
         <!-- Stylesheets -->
         <!-- Codebase framework -->
         <link rel="stylesheet" id="css-main" href="{{ asset('css/codebase.min.css') }}">
+        @yield('css-app')
 
 
 </head>
@@ -41,6 +42,8 @@
 
 
                 <!-- Codebase Core JS -->
+
+
           
                 <script src="{{ asset('js/core/jquery.min.js') }}"></script>
                 <script src="{{ asset('js/core/popper.min.js') }}"></script>
@@ -51,10 +54,7 @@
                 <script src="{{ asset('js/core/jquery.countTo.min.js') }}"></script>
                 <script src="{{ asset('js/core/js.cookie.min.js') }}"></script>
                 <script src="{{ asset('js/codebase.js') }}"></script>
-        
-                <!-- Page JS Plugins -->
-                <script src="{{ asset('js/plugins/chartjs/Chart.bundle.min.js') }}"></script>
-        
-                <!-- Page JS Code -->
-                <script src="{{ asset('js/pages/be_pages_dashboard.js') }}"></script>
+                @yield('scripts')
+         
+
 </body>
