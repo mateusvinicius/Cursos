@@ -93,7 +93,7 @@
                                             <a href="{{route('users.index')}}">All users</a>
                                             </li>
                                             <li>
-                                                <a class="active" href="be_pages_dashboard2.html">New user</a>
+                                                <a class="active" href="{{route('users.create')}}">New user</a>
                                             </li>
                                             <li>
                                                 <a href="be_pages_dashboard3.html">You Profile</a>
