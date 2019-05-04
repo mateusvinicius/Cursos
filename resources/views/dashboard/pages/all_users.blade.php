@@ -9,9 +9,10 @@
 
 @section('main')
    <!-- Dynamic Table Full Pagination -->
+   <h2 class="content-heading">All Users</h2>
    <div class="block">
     <div class="block-header block-header-default">
-        <h3 class="block-title">Usuarios</h3>
+       
     </div>
     <div class="block-content block-content-full">
         <!-- DataTables init on table by adding .js-dataTable-full-pagination class, functionality initialized in js/pages/be_tables_datatables.js -->
